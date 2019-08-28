@@ -1,0 +1,11 @@
+.zone {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+  }
+  
+  .zone.active {
+    display: block;
+  }

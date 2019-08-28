@@ -26,7 +26,8 @@ class VideoStream(object):
         # so we must encode it into JPEG in order to correctly display the
         # video stream.
 
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        #image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        
         font = cv2.FONT_HERSHEY_SIMPLEX
         text = "Robot-Arm - " +  datetime.datetime.now().strftime("%a %d %m %Y %X")
         image = cv2.putText(image, text, (10, 50), font, 0.75, (255, 255, 255), 2, cv2.LINE_AA)
